@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title> Crazy Bedtime Carnage </title>
+  <title> Escape the Underworld </title>
   <style type="text/css">
     body {
       background-color: #000000;
@@ -44,10 +44,10 @@
 <body>
 
   <div id="view">
-    <span class="lime">Crazy Bedtime Carnage</span>
+    <span class="lime">Escape the Underworld</span>
     <span class="red">v1.0.00</span>
     <br>
-    <br>Welcome to your worst nightmare, full of drugged alligators, vampire strippers and mexican currency! To start the game, use the command <span id="lime"> start</span>.
+    <br>Welcome to your worst nightmare: you are dead! To start the game, use the command <span id="lime"> start</span>.
     <span class="lime">start</span> now. For help, type
     <span class="lime">help</span>.</div>
 
@@ -229,7 +229,7 @@
         // Check our inventory.
         if (isPlaying) {
           var txt = "<span class=\"yellow\">My Inventory</span><br><br>" + "You are wearing the fabulous clothes that were present before you entered " + "the doorway to The Underworld. You had some mortal money in your pockets, but it was " +
-            "washed away in the Styx. You have <span class=\"yellow\">$" + money + "</span> in Souls.<br><br>";
+            "washed away in the Styx. You have <span class=\"yellow\">$" + money + "</span> in Underworld Soul Dollars (USD).<br><br>";
           if (hasBoat) {
             txt += "You have a boat to cross the River Lithe on. This thing cost you " + "<span class=\"yellow\">$500</span> of your hard-earned Souls.";
           }
@@ -441,7 +441,7 @@
         case "garden":
           descrip = "<span class=\"yellow\">Persephone's Garden</span><br><br>" + "This particular corner of the Underworld seems to be the most vibrant with " + "organic plant life. All around you are hundreds of colorful flowers. There's " +
             "an exit to the Fields of Ashpodel further to the east, but you'd have to walk through " + "these flowers to get to it, and there's nothing out there that looks worth " + "the effort.<br><br>" +
-            "The vegetation is thick, and you can't even see the ground around you. " + "Something could easily be hidden around here.<br><br>" + "<span class=\"orange\">Exits:</span> west";
+            "The vegetation is thick, and you can't even see the ground around you. " + "Something could easily be hidden in the plants.<br><br>" + "<span class=\"orange\">Exits:</span> west";
           display(descrip);
           exitNorth = "";
           exitSouth = "";
