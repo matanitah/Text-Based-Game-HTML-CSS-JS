@@ -208,9 +208,9 @@
         if (isPlaying == 0) {
           isPlaying = 1;
           descrip = "<span class=\"yellow\">Welcome to The Underworld</span><br><br>" + "As you step towards the white light to the Underworld, you are " + "startled as the light pulls you into it. Through the door is nothing but darkness and" +
-            " for quite a while you experience a feeling of freefall. You have no idea where" + " you'll land or even if you are going to escape alive. " + "A length of time later, you hear a loud splash as you land in what appears to be " +
-            "water. The water is full of moving shapes. Upon touching one, you feel a rush of emotion. " + "You stare into the water for a few moments until your eyes become adapted to the darkness, " +
-            "and a very vivid--yet dim--light comes into view in front of you.<br><br>" + "<span class=\"orange\">Exits:</span> north";
+            " for quite a while you experience a feeling of freefall. You have no idea where" + " you'll land or even if you are going to at all. " + "A length of time later, you hear a loud splash as you land in what appears to be " +
+            "water. The water is full of moving shapes. Upon touching one, you feel a sudden rush of emotion. " + "You stare into the water for a few moments until your eyes become adapted to the darkness, " +
+            "and a dim light comes into view.<br><br>" + "<span class=\"orange\">Exits:</span> north";
           display(descrip);
           exitNorth = "well";
           exitSouth = "";
@@ -231,7 +231,7 @@
           var txt = "<span class=\"yellow\">My Inventory</span><br><br>" + "You are wearing the fabulous clothes that were present before you entered " + "the doorway to The Underworld. You had some mortal money in your pockets, but it was " +
             "washed away in the Styx. You have <span class=\"yellow\">$" + money + "</span> in Underworld Soul Dollars (USD).<br><br>";
           if (hasBoat) {
-            txt += "You have a boat to cross the River Lithe on. This thing cost you " + "<span class=\"yellow\">$500</span> of your hard-earned Souls.";
+            txt += "You also have a boat to cross the River Lithe on. This thing cost you " + "<span class=\"yellow\">$500</span> of your hard-earned Souls.";
           }
           display(txt);
         } else {
@@ -389,7 +389,7 @@
       } else if (verb == "replay") {
         display("<span class=\"yellow\">Replay</span><br><br>" + "So, you've beaten the game, huh? Here are a few neat things you might not have tried:<br><br>" + "- Have you wandered off into the Fields of Ashpodel?<br>" +
           "- Have you tried throwing objects or examining things that weren't there?<br>" + "- Have you tried swearing at the game, or dropping an F bomb at it?<br><br>" + "<span class=\"yellow\">About The Game</span><br><br>" +
-          "This game was programmed in 2015, by Your Mother!" + "<a href=\"https://en.wikipedia.org/wiki/Zork/\">Inspiration from HERE</a>");
+          "This game was programmed in 2016, by Matan Itah!" + "<a href=\"https://en.wikipedia.org/wiki/Zork/\">Inspired by the classic game Zork</a>");
       } else {
         display("<span class=\"red\">Unrecognized command:</span> You don\'t need to use the word \"" + verb + "\" in this game.");
       }
